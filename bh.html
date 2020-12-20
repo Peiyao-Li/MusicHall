@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 谢霆锋--因为爱所以爱
+    陈小春--独家记忆
+    小虎队--爱
+    莫文蔚--盛夏的果实
+    金莎--星月神话-->
+
+    <!-- 欧美1--Fractures
+    欧美2--The Ocean
+    欧美3--All Time Low
+    欧美4--This Girl
+    欧美5--Falling Again -->
+
+    <!-- Rap1--想把你留在这里
+    Rap2--Come Back
+    Rap3--星球坠落
+    Rap4--心跳
+    Rap5--Artist -->
+<!-- 
+    古风1--烟雨行舟
+    古风2--九万字
+    古风3--下山
+    古风4--芒种 -->
+
+    <div id="page1">
+        <div class="clear" id="box1">
+            <img src="img/logo.jpg" alt="" id="logo">
+            <img src="img/slogan.gif" alt="" id="slogan">
+        </div>
+        <div class="fenge"></div>
+        <div class="kongbai"></div>
+        <div id="jingdian">
+            <p class="text">华语经典</p>
+            <p id="p1"></p>
+            <div class="kongbai"></div>
+            <div id="hyjd1">
+                <img src="img/cxc.jpg" alt="" id="himg1">
+                <!-- <div class="hname">
+                    陈小春---独家记忆
+                </div> -->
+                <img src="img/xhd.jpg" alt="" id="himg2">
+                <!-- <div class="hname">
+                    小虎队---爱
+                </div> -->
+                <img src="img/mww.jpg" alt="" id="himg3">
+                <!-- <div class="hname">
+                    莫文蔚--盛夏的果实
+                </div> -->
+                <img src="img/js.jpg" alt="" id="himg4" >
+                <!-- <div class="hname">
+                    金莎--星月神话
+                </div> -->
+            </div>
+        </div>
+        <div class="kongbai"></div>
+        <div id="om">
+            <div class="fenge"></div>
+            <div class="kongbai"></div>
+            <p class="text">欧美流行</p>
+            <p id="p2"></p>
+            <div class="kongbai"></div>
+            <img src="img/om1.jpg" alt="" id="om1">
+            <!-- <div class="oname">
+                Fractures
+            </div> -->
+            <img src="img/om2.jpg" alt="" id="om2">
+            <!-- <div class="oname">
+                The Ocean
+            </div> -->
+            <img src="img/om3.jpg" alt="" id="om3">
+            <!-- <div class="oname">
+                All Time Low
+            </div> -->
+            <img src="img/om4.jpg" alt="" id="om4">
+            <!-- <div class="oname">
+                Falling Again
+            </div> -->
+        </div>
+        <div class="kongbai"></div>
+        <div id="Rap">
+            <div class="fenge"></div>
+            <div class="kongbai"></div>
+            <p class="text">说唱速递</p>
+            <p id="p3"></p>
+            <div class="kongbai"></div>
+            <img src="img/Rap1.jpg" alt="" id="Rap1">
+            <!-- <div class="Rname">
+                TizzyT&&JonyJ---想把你留在这里
+            </div> -->
+            <img src="img/Rap2.jpg" alt="" id="Rap2">
+            <!-- <div class="Rname">
+                小鬼---Come Back
+            </div> -->
+            <img src="img/Rap3.jpg" alt="" id="Rap3">
+            <!-- <div class="Rname">
+                艾热---星球坠落
+            </div> -->
+            <img src="img/Rap4.jpg" alt="" id="Rap4">
+            <!-- <div class="Rname">
+                杨和苏---心跳
+            </div> -->
+        </div>
+        <div class="gensui">
+            <img src="img/sb1.jpg" id="yinfu">
+        </div>
+    </div>
+    <!-- <div id="login">
+
+    </div> -->
+
+
+</body>
+<script>
+    var himg1 = document.getElementById("himg1");
+    var himg2 = document.getElementById("himg2");
+    var himg3 = document.getElementById("himg3");
+    var himg4 = document.getElementById("himg4");
+    var om1 = document.getElementById("om1");
+    var om2 = document.getElementById("om2");
+    var om3 = document.getElementById("om3");
+    var om4 = document.getElementById("om4");
+    var Rap1 = document.getElementById("Rap1");
+    var Rap2 = document.getElementById("Rap2");
+    var Rap3 = document.getElementById("Rap3");
+    var Rap4 = document.getElementById("Rap4");
+    //var hyjd = document.getElementsByClassName("hyjd");
+    var text = document.getElementsByClassName("text");
+    var p1 = document.getElementById("p1");
+    var p2 = document.getElementById("p2");
+    var p3 = document.getElementById("p3");
+    //鼠标跟随
+    document.onmouseover = function(ev){
+        var gensui = document.getElementsByClassName("gensui");
+        var oEvent = ev||event;
+        gensui[0].style.left = oEvent.clientX  + 'px';
+        gensui[0].style.top = oEvent.clientY  + 'px';
+    }
+    //点击图片图片放大
+    himg1.onmouseover = function(){
+        himg1.style.width="280px";
+        himg1.style.height="280px";
+    }
+    himg1.onmouseout = function(){
+        himg1.style.width="260px";
+        himg1.style.height="260px";
+    }
+    himg2.onmouseover = function(){
+        himg2.style.width="280px";
+        himg2.style.height="280px";
+    }
+    himg2.onmouseout = function(){
+        himg2.style.width="260px";
+        himg2.style.height="260px";
+    }
+    himg3.onmouseover = function(){
+        himg3.style.width="280px";
+        himg3.style.height="280px";
+    }
+    himg3.onmouseout = function(){
+        himg3.style.width="260px";
+        himg3.style.height="260px";
+    }
+    himg4.onmouseover = function(){
+        himg4.style.width="280px";
+        himg4.style.height="280px";
+    }
+    himg4.onmouseout = function(){
+        himg4.style.width="260px";
+        himg4.style.height="260px";
+    }
+    //点击图片图片放大
+    om1.onmouseover = function(){
+        om1.style.width="280px";
+        om1.style.height="280px";
+    }
+    om1.onmouseout = function(){
+        om1.style.width="260px";
+        om1.style.height="260px";
+    }
+    om2.onmouseover = function(){
+        om2.style.width="280px";
+        om2.style.height="280px";
+    }
+    om2.onmouseout = function(){
+        om2.style.width="260px";
+        om2.style.height="260px";
+    }
+    om3.onmouseover = function(){
+        om3.style.width="280px";
+        om3.style.height="280px";
+    }
+    om3.onmouseout = function(){
+        om3.style.width="260px";
+        om3.style.height="260px";
+    }
+    om4.onmouseover = function(){
+        om4.style.width="280px";
+        om4.style.height="280px";
+    }
+    om4.onmouseout = function(){
+        om4.style.width="260px";
+        om4.style.height="260px";
+    }
+    Rap1.onmouseover = function(){
+        Rap1.style.width="280px";
+        Rap1.style.height="280px";
+    }
+    Rap1.onmouseout = function(){
+        Rap1.style.width="260px";
+        Rap1.style.height="260px";
+    }
+    Rap2.onmouseover = function(){
+        Rap2.style.width="280px";
+        Rap2.style.height="280px";
+    }
+    Rap2.onmouseout = function(){
+        Rap2.style.width="260px";
+        Rap2.style.height="260px";
+    }
+    Rap3.onmouseover = function(){
+        Rap3.style.width="280px";
+        Rap3.style.height="280px";
+    }
+    Rap3.onmouseout = function(){
+        Rap3.style.width="260px";
+        Rap3.style.height="260px";
+    }
+    Rap4.onmouseover = function(){
+        Rap4.style.width="280px";
+        Rap4.style.height="280px";
+    }
+    Rap4.onmouseout = function(){
+        Rap4.style.width="260px";
+        Rap4.style.height="260px";
+    }
+    //点击图片图片放大
+    // for(var i = 0;i<hyjd.length;i++){
+    //     hyjd[i].onmouseover = function(){
+    //         hyjd[i].style.width="300";
+    //         //hyjd[i].style.width="300px";
+    //         hyjd[i].style.height="300px";
+    //     }
+    // }
+
+    text[0].onclick = function(){        
+        text[0].style.display = "inline-block";
+        p1.innerHTML="晶莹剔透的美妙音符 感人至深的唯美深情";
+        p1.style.marginLeft = "30px";
+        var intervalId = setInterval(function(){
+        var marginLeft = parseInt(p1.style.marginLeft);
+        if(marginLeft == 623){
+            marginLeft = 30;
+            p1.style.marginTop = "10px";
+        }
+        p1.style.marginLeft = (marginLeft+1) + "px";
+    },10)
+    }
+    text[1].onclick = function(){        
+        text[1].style.display = "inline-block";
+        p2.innerHTML="我听过千万句关于美好的句子 全都不及你可爱的样子";
+        p2.style.marginLeft = "30px";
+        var intervalId = setInterval(function(){
+        var marginLeft = parseInt(p2.style.marginLeft);
+        if(marginLeft == 518){
+            marginLeft = 30;
+            p2.style.marginTop = "10px";
+        }
+        p2.style.marginLeft = (marginLeft+1) + "px";
+    },10)
+    }
+    text[2].onclick = function(){        
+        text[2].style.display = "inline-block";
+        p3.innerHTML="旋律之间的碰撞 仿佛无趣 却又自由";
+        p3.style.marginLeft = "30px";
+        var intervalId = setInterval(function(){
+        var marginLeft = parseInt(p3.style.marginLeft);
+        if(marginLeft == 610){
+            marginLeft = 30;
+            p3.style.marginTop = "10px";
+        }
+        p3.style.marginLeft = (marginLeft+1) + "px";
+    },10)
+    }
+
+</script>
+</html>
