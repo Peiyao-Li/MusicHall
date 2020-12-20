@@ -1,0 +1,145 @@
+*{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    float: left;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.clear:after{
+    content:'';
+    display: block;
+    height:0;
+    clear:both;
+}
+/* body {
+	background: rgba(226, 255, 254, 0.4);
+} */
+#box1{
+    width: 1200px;
+    height:185px;
+    padding:0;
+    border:2px black;
+    margin: 0 auto;
+}
+#logo{
+    height:200px;
+    width:400px;
+    float:left;
+    position:absolute;
+    /* left:80px; */
+    top:-26px;
+}
+#slogan{
+    height:200px;
+    width: 600px;
+    float:right;
+    /* opacity: 0.8; */
+    position:absolute;
+    top: -16px;
+    right:128px;
+}
+.fenge{
+    width:1200px;
+    height:2px;
+    margin: 0 auto;
+    background-color: rgb(123, 93, 133);
+}
+.text{
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color:rgb(78, 88, 121);
+}
+.kongbai{
+    height:30px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0)
+}
+#jingdian{
+    width:1200px;
+    position: absolute;
+    left:160px; 
+    margin:0 auto;
+}
+#p1{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    font-size: 20px;
+    color:rgb(78, 88, 121);
+}
+#hyjd1 img{
+    width: 260px;
+    height: 260px;
+    margin:0 15px;
+}
+#hyjd .hname{
+    width: 280px;
+    height: 100px;
+    background-color: rgba(225,200,200,0.4);
+    position: absolute;
+    bottom: 1px;
+    color: rgb(250, 250, 250);
+    font-size: 15px;
+    text-align: center;
+    height: 100px;
+    display: none;
+}
+/* .hyjd{
+    width: 260px;
+    height: 260px;
+    margin:0 15px;
+} */
+#om{
+    width:1200px;
+    position: absolute;
+    left:160px;
+    margin:0 auto;
+    top:600px;
+}
+#p2{
+    position: absolute;
+    left: 200px;
+    top: 38px;
+    font-size: 20px;
+    color:rgb(78, 88, 121);
+}
+#om img{
+    width: 260px;
+    height: 260px;
+    margin:0 15px;
+}
+#Rap{
+    width:1200px;
+    position: absolute;
+    left:160px;
+    margin:0 auto;
+    top:1020px;
+}
+#p3{
+    position: absolute;
+    left: 200px;
+    top: 38px;
+    font-size: 20px;
+    color:rgb(78, 88, 121);
+}
+#Rap img{
+    width: 260px;
+    height: 260px;
+    margin:0 15px;
+}
+.gensui{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#yinfu{
+    width: 50px;
+    height: 50px;
+}
